@@ -1,0 +1,17 @@
+services:
+  web:
+    build: .
+    restart: always
+    ports:
+      - "8000:8000"
+    environment:
+      DJANGO_DEBUG: "1"
+      DJANGO_ALLOWED_HOSTS: "*"
+      DJANGO_DB_PATH: "/app/data/db.sqlite3"
+    volumes:
+      - django_data:/app/data
+      - media_data:/app/mysite/uploads
+
+volumes:
+  django_data:
+  media_data:

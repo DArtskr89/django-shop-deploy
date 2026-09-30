@@ -39,8 +39,8 @@ ssh root@SERVER_IP
 На сервере должны быть установлены Git, Docker и Docker Compose. Затем нужно клонировать публичный репозиторий и запустить приложение:
 
 ```bash
-git clone https://github.com/DArtskr89/django-shop-deploy.git
-cd django-shop-deploy
+git clone REPOSITORY_URL
+cd REPOSITORY_DIRECTORY
 docker compose up --build -d
 ```
 
